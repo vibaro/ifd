@@ -8,9 +8,8 @@ body ::selection {
   color: #fff;
 }
 body .title {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
   background-color: #444;
-  margin: -8px -8px 0 -8px;
+  margin: 0 -8px 24px -8px;
   text-align: center;
   position: sticky;
   font-weight: 500;
@@ -34,7 +33,7 @@ body .menu {
   list-style: none;
   padding: 0;
   margin: 0;
-  top: 61px;
+  top: 77px;
 }
 body .menu li a {
   border-right: 3px solid transparent;

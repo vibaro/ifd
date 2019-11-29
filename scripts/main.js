@@ -13,7 +13,6 @@
         },
 
         toggleMenu: function() {
-            lib.elToggle.classList.toggle('open');
             lib.elMenu.classList.toggle('open');
         }
     };

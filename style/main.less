@@ -18,7 +18,7 @@ body {
         font-size: 1.1em;
         padding: 16px;
         color: #fff;
-        z-index: 1;
+        z-index: 5;
         top: 0;
 
         .toggle-menu {
@@ -144,11 +144,33 @@ body {
         }
 
         .menu-area {
+            position: sticky;
+            flex: 0 0 100%;
+            max-width: 100%;
+            z-index: 3;
+            top: 70px;
+        
             .menu {
                 display: none;
 
                 &.open {
                     display: block;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+                    background-color: #fafafa;
+                    position: absolute;
+                    z-index: 10;
+                    right: -8px;
+                    left: -8px;
+                    top: -24px;
+                    border: none;
+
+                    li {
+                        a {
+                            padding: 16px;
+                            font-size: 1.1em;
+                            text-align: left;
+                        }
+                    }
                 }
             }
         }

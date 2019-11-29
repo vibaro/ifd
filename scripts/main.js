@@ -1,16 +1,20 @@
 !function() {
 
     const lib = {
+        elToggle: document.querySelector('.toggle-menu'),
+        elMenu: document.querySelector('.menu'),
+
         init: function() {
             lib.events();
         },
 
         events: function() {
-            document.querySelector('.toggle-menu').addEventListener('click', lib.toggleMenu);
+            lib.elToggle.addEventListener('click', lib.toggleMenu);
         },
 
         toggleMenu: function() {
-
+            lib.elToggle.classList.toggle('open');
+            lib.elMenu.classList.toggle('open');
         }
     };
 

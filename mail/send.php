@@ -1,5 +1,5 @@
 <?php
-    $email="";
+    $email="contato@filosofosdesconhecidos.org";
     $head = "From: " . $_POST['email'];
     $headers = "Content-Type: text/html; charset=UTF-8";
     $title= "Contato - " . $_POST['nome'];

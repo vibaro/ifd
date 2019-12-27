@@ -16,7 +16,7 @@
                 mensagem: $.trim($('#mensagem').val())
             };
 
-            if (data.nome && data.email && data.mensagem)
+            if (data.nome && data.email && data.mensagem) {
                 $.post('../mail/send.php', data, function() {
                     alert('E-mail enviado! Aguarde nosso contato.');
                 });
